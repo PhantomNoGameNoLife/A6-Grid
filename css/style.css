@@ -1,0 +1,402 @@
+/* ******************** start general css ******************** */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #333333;
+    --color-secondary: #9fa3a7;
+    --color-tertiary: #fffbfb;
+    --color-default: #fff;
+    --color-default2: #000;
+    --link-color: #27b9c2;
+    --link-arrow: #ffc80a;
+    --background-primary: #f7f8f9;
+    --background-secondary: #f05638;
+    --background-twitter: #38d5f4;
+    --background-twitter2: #35CFED;
+    --background-ux: #93b6b7;
+    --background-best: #fa684f;
+    --background-cloud: #8f76bc;
+    --background-cloud2: #8166b0;
+    --background-flag: hsla(0, 0%, 100%, .08);
+    --background-pop: #7bc424;
+    --background-tv: #2c2c2c;
+    --font-primary: "Montserrat", sans-serif;
+    --font-secondary: "Arvo", sans-serif;
+    --font-default: "Open Sens", sans-serif;
+}
+
+body {
+    font-family: var(--font-default);
+    color: var(--color-primary);
+    line-height: 1.625rem;
+    font-size: .875rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    margin-bottom: .625rem;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+    margin-top: 1.25rem;
+}
+
+h3 {
+    margin-block: .625rem 1.25rem;
+    font-family: var(--font-secondary);
+    font-size: 1.375rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+a {
+    display: inline-block;
+    color: var(--link-color);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.cont-img {
+    position: relative;
+    left: -7%;
+    margin-inline: auto;
+}
+
+.head-p {
+    color: var(--color-secondary);
+    font-family: var(--font-primary);
+    font-size: .75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    letter-spacing: .125rem;
+}
+
+.arrow-link {
+    margin-top: 1.25rem;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .15rem;
+    text-decoration: none;
+}
+
+.arrow {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.mini {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    padding-inline: .625rem;
+    border-radius: .3125rem;
+    -webkit-border-radius: .3125rem;
+    -moz-border-radius: .3125rem;
+    -ms-border-radius: .3125rem;
+    -o-border-radius: .3125rem;
+    background-color: var(--background-best);
+    font-size: .5rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    letter-spacing: .125rem;
+}
+
+.container {
+    max-width: 330px;
+    margin-inline: auto;
+}
+
+.py-30 {
+    padding-block: 1.875rem;
+}
+
+.py-40 {
+    padding-block: 2.5rem;
+}
+
+.py-50 {
+    padding-block: 3.125rem;
+}
+
+.py-68-50 {
+    padding-block: 4.25rem 3.125rem;
+}
+
+.py-30-70-18 {
+    padding: 1.875rem 1.125rem 4.375rem;
+}
+
+.flex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: grid;
+}
+
+/* ******************** end general css ******************** */
+/* ******************** start rotary ******************** */
+.rotary {
+    text-align: center;
+    background-color: var(--background-primary);
+}
+
+.rotary h1 {
+    font-family: var(--font-secondary);
+    margin-top: 1.25rem;
+    font-size: 2.25rem;
+    line-height: 3.15rem;
+    font-weight: 400;
+}
+
+/* ******************** end rotary ******************** */
+/* ******************** start iphone ******************** */
+.iphone {
+    justify-content: space-around;
+    padding-top: 2.5rem;
+}
+
+.iphone p:not(.head-p) {
+    color: var(--color-secondary);
+}
+
+.iphone .cont-img {
+    margin-top: 2.5rem;
+    left: -4%;
+}
+
+.iphone .cont-img img {
+    width: 249px;
+}
+
+/* ******************** end iphone ******************** */
+/* ******************** start keyboard ******************** */
+.keyboard {
+    background-color: var(--background-secondary);
+}
+
+.keyboard h3 {
+    max-width: 230px;
+    margin-bottom: 0;
+    color: var(--color-tertiary);
+    text-align: center;
+    font-weight: bold;
+}
+
+.keyboard a {
+    color: var(--link-arrow);
+}
+
+.keyboard div img {
+    width: 319px;
+}
+
+/* ******************** end keyboard ******************** */
+/* ******************** start controller ******************** */
+.controller {
+    background-color: var(--background-primary);
+}
+
+.controller div {
+    left: -5%;
+}
+
+.controller h3 {
+    width: 54%;
+    text-align: center;
+}
+
+.controller div img {
+    width: 249px;
+}
+
+
+/* ******************** end controller ******************** */
+/* ******************** start imac ******************** */
+.imac {
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.imac .cont-img {
+    left: -115%;
+    width: 200%;
+    margin-block: 2.5rem 2.125rem;
+}
+
+.imac p:not(.head-p) {
+    color: var(--color-secondary);
+}
+
+/* ******************** end imac ******************** */
+/* ******************** start twitter ******************** */
+.twitter {
+    background-color: var(--background-twitter);
+}
+
+.twitter .circle {
+    background-color: var(--background-twitter2);
+    margin-inline: auto;
+    width: 240px;
+    height: 240px;
+    padding-inline: 2.125rem;
+    border-radius: 50%;
+    color: var(--color-default);
+}
+
+.twitter img {
+    width: 43.5px;
+}
+
+/* ******************** end twitter ******************** */
+/* ******************** start ux ******************** */
+.ux {
+    padding-bottom: 0;
+    background: url(./../img/5bc2f42d5a5ed97dab707e7e_UX.png) no-repeat 50% 100% / 80%;
+    background-color: var(--background-ux);
+    color: var(--color-default);
+    position: relative;
+}
+
+.ux h3 {
+    max-width: 280px;
+    margin: auto;
+    padding-block: 1.9375rem;
+    font-weight: bold;
+}
+
+.ux .cont-img {
+    width: 90%;
+    margin-inline: 0;
+}
+
+/* ******************** end ux ******************** */
+/* ******************** start cloud ******************** */
+.cloud {
+    background-color: var(--background-cloud);
+    color: var(--color-default);
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.cloud .circle {
+    background-color: var(--background-cloud2);
+    width: 373px;
+    height: 373px;
+    border-radius: 50%;
+}
+
+.cloud .circle div:first-child {
+    padding: .125rem .8125rem .0625rem 1.875rem;
+    background: url(./../img/5bc2f42d5a5ed9663e707e7d_Shape.png) no-repeat 11px 50% / 12px;
+    background-color: var(--background-flag);
+    font-size: .625rem;
+    line-height: 1.4375rem;
+    font-weight: 700;
+    letter-spacing: .15rem;
+    border-radius: 3.75rem;
+    -webkit-border-radius: 3.75rem;
+    -moz-border-radius: 3.75rem;
+    -ms-border-radius: 3.75rem;
+    -o-border-radius: 3.75rem;
+}
+
+.cloud .circle div:nth-child(2) {
+    left: -8px;
+    margin: 1.25rem 0 0;
+}
+
+.cloud .circle div:nth-child(2) img {
+    width: 239px;
+}
+
+.cloud .circle .head-p {
+    color: var(--color-default);
+}
+
+.cloud h2 {
+    font-family: var(--font-secondary);
+}
+
+.cloud>p {
+    width: 80%;
+    max-width: 290px;
+}
+
+.cloud a {
+    margin-top: 1.875rem;
+    padding: .875rem 1.75rem;
+    background-color: var(--link-arrow);
+    color: var(--color-default2);
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .15rem;
+    text-decoration: none;
+    border-radius: 3.125rem;
+    -webkit-border-radius: 3.125rem;
+    -moz-border-radius: 3.125rem;
+    -ms-border-radius: 3.125rem;
+    -o-border-radius: 3.125rem;
+}
+
+/* ******************** end cloud ******************** */
+
+/* ******************** start pop ******************** */
+.pop {
+    background-color: var(--background-primary);
+}
+
+.pop .mini {
+    position: static;
+    background-color: var(--background-pop);
+    color: var(--color-default);
+}
+
+.pop h3 {
+    width: 70%;
+    text-align: center;
+}
+
+/* ******************** end pop ******************** */
+
+/* ******************** start tv ******************** */
+.tv {
+    padding-block: 0 1.875rem;
+    background-color: var(--background-tv);
+    color: var(--color-default);
+}
+
+.tv .cont-img {
+    left: -15%;
+}
+
+.tv .cont-img img {
+    width: 271px;
+}
+
+.tv h3 {
+    position: relative;
+    top: -25px;
+}
+
+/* ******************** end tv ******************** */
